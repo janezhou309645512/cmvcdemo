@@ -1,0 +1,202 @@
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\ApplicationInsights.config
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\csc.exe
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\System.Collections.Immutable.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\vbc.exe
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\VBCSCompiler.exe
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\roslyn\VBCSCompiler.exe.config
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\cmvcdemo.dll.config
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\cmvcdemo.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\cmvcdemo.pdb
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Antlr3.Runtime.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\EntityFramework.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\EntityFramework.SqlServer.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.Web.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.WindowsServer.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.ApplicationInsights.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Google.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Web.Infrastructure.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Newtonsoft.Json.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Owin.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Helpers.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Mvc.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Optimization.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Razor.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Deployment.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Razor.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\WebGrease.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.Web.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AI.WindowsServer.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.ApplicationInsights.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Helpers.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Mvc.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Optimization.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.Razor.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Deployment.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Razor.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Antlr3.Runtime.pdb
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Newtonsoft.Json.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\EntityFramework.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\EntityFramework.SqlServer.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Google.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Helpers.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Mvc.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Optimization.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Razor.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.WebPages.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\EntityFramework.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\obj\Debug\cmvcdemo.csprojResolveAssemblyReference.cache
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\obj\Debug\cmvcdemo.dll
+c:\users\jane.zhou1\documents\visual studio 2015\Projects\cmvcdemo\cmvcdemo\obj\Debug\cmvcdemo.pdb
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\ApplicationInsights.config
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\csc.exe
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\vbc.exe
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\VBCSCompiler.exe
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\cmvcdemo.dll.config
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\cmvcdemo.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\cmvcdemo.pdb
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Antlr3.Runtime.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\EntityFramework.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\EntityFramework.SqlServer.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.DependencyCollector.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.Web.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.WindowsServer.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.ApplicationInsights.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Google.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Web.Infrastructure.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Newtonsoft.Json.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Owin.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Helpers.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Mvc.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Optimization.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Razor.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Deployment.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Razor.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\WebGrease.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.DependencyCollector.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.Web.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AI.WindowsServer.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.ApplicationInsights.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Helpers.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Mvc.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Optimization.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.Razor.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Deployment.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\System.Web.WebPages.Razor.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Antlr3.Runtime.pdb
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Newtonsoft.Json.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\EntityFramework.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\EntityFramework.SqlServer.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Google.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\EntityFramework.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.Facebook.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\obj\Debug\cmvcdemo.csprojResolveAssemblyReference.cache
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\obj\Debug\cmvcdemo.dll
+D:\Workspaces\VisualstudioWorkspaces\cmvcdemo\cmvcdemo\obj\Debug\cmvcdemo.pdb
