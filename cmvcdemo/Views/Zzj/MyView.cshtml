@@ -7,14 +7,164 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>MyView</title>
+    <title>材料扫描信息记录</title>
+    <meta http-equiv="refresh" content="180" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <style type="text/css">
+        .ms_text {
+            width: 50px;
+            text-align: center;
+            height: 50px;
+            border: 1px solid #00BFFF;
+        }
+
+        .ms_font {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .ms_unfont {
+            font-size: 20px;
+            color: #ff6666;
+        }
+    </style>
 </head>
-<body>
-    <div> 
-<p>欢迎来到物流系统</p>
+<body bgcolor="#FFFFFF">
 
 
+
+    <div style="padding-top: 10px;">
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+            <tr>
+                <td width="100%" align="center"><font size="6" color="#000000">材料扫描记录</font></td>
+            </tr>
+        </table>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+            <tr>
+                <td class="ms_text"><font class="ms_font">序号</font></td>
+                <td class="ms_text"><font class="ms_font">工单</font></td>
+                <td class="ms_text"><font class="ms_font">品名</font></td>
+                <td class="ms_text"><font class="ms_font">材料编号</font></td>
+                <td class="ms_text"><font class="ms_font">材料批次</font></td>
+                <td class="ms_text"><font class="ms_font">材料规格</font></td>
+                <td class="ms_text"><font class="ms_font">是否强制</font></td>
+                <td class="ms_text"><font class="ms_font">扫描时间</font></td>
+            </tr>
+        </table>
     </div>
+    <div id="demo" style="overflow: hidden; height:100%;">
+        <div id="demo1">
+            <table id="table1" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9"></table>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+
+                 //1.CSS简化 2.做判断
+            $(document).ready(function () {
+                //
+                QueryTables();
+
+                var speed = 50;
+                demo2.innerHTML = demo1.innerHTML;
+                function Marquee() {
+                    if (demo2.offsetTop - demo.scrollTop <= 0){
+                        demo.scrollTop -= demo1.offsetHeight;
+                    } else {
+                        demo.scrollTop++;
+                    }
+                }
+                var MyMar = setInterval(Marquee, speed);
+
+                demo.onmouseover = function () {
+                    clearInterval(MyMar);
+                }
+
+                demo.onmouseout = function () {
+                    MyMar = setInterval(Marquee, speed);
+                }
+                 }
+            );
+            //[{"FManuOrder":"SGM180914001","FProduct":"800-CJN747-04-0","FMaterial":"600-P7410500-0340","FLotNumber":"SDK20180906","FSpecs":"340MM*200M","FIsForce":false,"FCheckTime":"2018-09-14 13:18:18","RowNo":"1"},{"FManuOrder":"SGM180914001","FProduct":"800-CJN747-04-0","FMaterial":"600-BEM32180-0294","FLotNumber":"W070647","FSpecs":"294MM*200M","FIsForce":false,"FCheckTime":"2018-09-14 13:18:11","RowNo":"2"},{"FManuOrder":"EAAR180911004","FProduct":"800-GKC677-01-1","FMaterial":"600-P6051000-0093","FLotNumber":"280714B1E01-04","FSpecs":"93MM*500M","FIsForce":true,"FCheckTime":"2018-09-14 13:01:59","RowNo":"3"},{"FManuOrder":"EAAR180911004","FProduct":"800-GKC677-01-1","FMaterial":"600-NT57130B-0015","FLotNumber":"8317807","FSpecs":"15MM*100M","FIsForce":true,"FCheckTime":"2018-09-14 13:01:34","RowNo":"4"},{"FManuOrder":"EAAR180911004","FProduct":"800-GKC677-01-1","FMaterial":"600-P0811100-0080","FLotNumber":"180822B3-26","FSpecs":"80MM*200M","FIsForce":false,"FCheckTime":"2018-09-14 13:01:09","RowNo":"5"},{"FManuOrder":"SAM180913007","FProduct":"800-EEI928-A0-U","FMaterial":"600-P0881000-0137","FLotNumber":"180827B3-17","FSpecs":"137MM*200M","FIsForce":false,"FCheckTime":"2018-09-14 12:53:41","RowNo":"6"},{"FManuOrder":"SAM180913007","FProduct":"800-EEI928-A0-U","FMaterial":"600-3M3304BC-0015","FLotNumber":"18072301-013","FSpecs":"15MM*100M","FIsForce":false,"FCheckTime":"2018-09-14 12:53:38","RowNo":"7"},{"FManuOrder":"SGR180914004","FProduct":"800-CJN719-03-0","FMaterial":"600-G3018600-0115","FLotNumber":"LOTNUMBER011746","FSpecs":"115MM*500M","FIsForce":false,"FCheckTime":"2018-09-14 12:51:07","RowNo":"8"},{"FManuOrder":"SGR180914004","FProduct":"800-CJN719-03-0","FMaterial":"600-PD356009-0095","FLotNumber":"180904A1-01","FSpecs":"95MM*100M","FIsForce":false,"FCheckTime":"2018-09-14 12:51:03","RowNo":"9"},{"FManuOrder":"SGR180914004","FProduct":"800-CJN719-03-0","FMaterial":"600-PD356009-0095","FLotNumber":"180904A1-01","FSpecs":"95MM*100M","FIsForce":false,"FCheckTime":"2018-09-14 12:51:02","RowNo":"10"}]
+
+                function QueryTables() {
+                $.ajax({
+                    url: '../Zzj/LshapeShow',
+                    type: 'POST',
+                    data: { id: "15"},
+                    success: function (data) {
+                        var json = JSON.parse(data);
+                        console.log(data);
+                        for (var i = 0; i < json.length; i++) {
+                            //解析json
+                            var trBegin = "<tr>";
+                            var td1 = "<td class='ms_text'><font class='ms_font'>" + (i + 1) + "</font></td>";
+                            var td2 = "<td class='ms_text'><font class='ms_font'>" + json[i].FManuOrder + "</font></td>";
+                            var td3 = "<td class='ms_text'><font class='ms_font'>" + json[i].FProduct + "</font></td>";
+                            var td4 = "<td class='ms_text'><font class='ms_font'>" + json[i].FMaterial + "</font></td>";
+                            var td5 = "<td class='ms_text'><font class='ms_font'>" + json[i].FLotNumber + "</font></td>";
+                            var td6 = "<td class='ms_text'><font class='ms_font'>" + json[i].FSpecs + "</font></td>";
+
+                            if (json[i].FIsForce == true) {
+                                var td7 = "<td class='ms_text'><font class='ms_unfont'>是</font></td>";
+
+
+                            } else {
+                                var td7 = "<td class='ms_text'><font class='ms_font'>否</font></td>";
+
+                            }
+
+                            var td8 = "<td class='ms_text'><font class='ms_font'>" + json[i].FCheckTime + "</font></td>";
+
+                            var trEnd = "</tr>";
+                            var room = trBegin + td1 + td2 + td3 + td4 + td5 + td6 + td7 + td8 + trEnd;
+                            $("#table1").append(room);
+
+
+
+                        }
+                    }
+                })
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
 </body>
 </html>

@@ -13,24 +13,32 @@ namespace cmvcdemo.Controllers
      //直接返回字符串
         public string GetString()
 
-
-
-      {        return "这是我的一SDFSFSDFS ;)"; 
+    {
+            return "这是我的一SDFSFSDFS ;)"; 
     
      }
 
         //返回视图
 
-        public ActionResult GetView()
+        public ActionResult MyView()
       {
-             Employee emp = new Employee();
-             emp.FirstName = "Sukesh";
-             emp.LastName = "Marla";
-             emp.Salary = 20000;
-           // 在ViewData中存储Employee 对象
+            
+             return View();
 
-             ViewData["Employee"] = emp;
-             return View("MyView");
+        }
+        //返回一个报表的json值
+       public string GetUsers()
+        {
+      
+             return "";
+        }
+
+
+        public string LshapeShow(string id)
+        {
+
+            return Dal.MyTest.LshapeShow();
+
 
         }
 
@@ -40,5 +48,7 @@ namespace cmvcdemo.Controllers
 
 
 
-}
+
+
+    }
 }

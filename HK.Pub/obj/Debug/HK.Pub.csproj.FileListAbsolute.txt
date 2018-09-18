@@ -1,0 +1,5 @@
+E:\Lstech.Mobile\Lstech.Mobile\HK.Pub\bin\Debug\HK.Pub.dll
+E:\Lstech.Mobile\Lstech.Mobile\HK.Pub\bin\Debug\HK.Pub.pdb
+E:\Lstech.Mobile\Lstech.Mobile\HK.Pub\bin\Debug\LitJson.dll
+E:\Lstech.Mobile\Lstech.Mobile\HK.Pub\obj\Debug\HK.Pub.dll
+E:\Lstech.Mobile\Lstech.Mobile\HK.Pub\obj\Debug\HK.Pub.pdb
