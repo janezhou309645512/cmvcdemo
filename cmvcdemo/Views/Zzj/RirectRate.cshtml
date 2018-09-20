@@ -1,0 +1,268 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+  
+    <title>直通率趋势图</title>
+    <meta http-equiv="refresh" content="180" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/Highcharts-6.0.7/code/highcharts.js"></script>
+    <script type="text/javascript" src="Highcharts-6.0.7/code/highcharts.js"></script>
+    <script src="~/Content/Highcharts-6.0.7/code/modules/exporting.src.js"></script>
+
+    <script src="~/Content/highcharts-zh_CN.js"></script>
+ 
+  
+
+    <script>
+	function max() {
+		self.moveTo(-5, -118)
+		self.resizeTo(window.screen.Width + 30, window.screen.Height + 143)
+	}
+    </script>
+
+
+
+</head>
+<body>
+    <div> 
+        <div id="container" style="min-width: 400px; height: 330px"></div>
+
+
+        <div style="padding-top: 10px;">
+
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+                <tr>
+                    <td width="100%" align="center"><font size="6" color="#000000">返工看板</font></td>
+                </tr>
+            </table>
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+                <tr>
+                    <td class="ms_text"><font class="ms_font">日期</font></td>
+                    <td class="ms_text"><font class="ms_font">班别</font></td>
+                    <td class="ms_text"><font class="ms_font">楼层</font></td>
+                    <td class="ms_text"><font class="ms_font">组别</font></td>
+                    <td class="ms_text"><font class="ms_font">送检总批数</font></td>
+                    <td class="ms_text"><font class="ms_font">返工批数</font></td>
+                    <td class="ms_text"><font class="ms_font">品名</font></td>
+                    <td class="ms_text"><font class="ms_font">返工原因</font></td>
+                </tr>
+            </table>
+        </div>
+        <div id="demo" style="overflow: hidden; height:300px;">
+            <div id="demo1">
+                <table id="table1" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9"></table>
+
+            </div>
+            <div id="demo2"></div>
+        </div>
+
+
+
+        
+
+
+
+</div>
+    <script type="text/javascript">
+        $(function () {
+        //文档开始时执行
+
+            FqcNg();
+            var speed = 50;
+            demo2.innerHTML = demo1.innerHTML;
+            function Marquee() {
+                if (demo2.offsetTop - demo.scrollTop <= 0) {
+                    demo.scrollTop -= demo1.offsetHeight;
+                } else {
+                    demo.scrollTop++;
+                }
+            }
+            var MyMar = setInterval(Marquee, speed);
+
+            demo.onmouseover = function () {
+                clearInterval(MyMar);
+            }
+
+            demo.onmouseout = function () {
+                MyMar = setInterval(Marquee, speed);
+            }
+
+
+
+            FqcRate();
+
+
+
+
+
+
+
+    });
+
+
+
+
+        //执行Fqc返工看板
+        //{"CheckDate":"2018-09-19","Fclass":"白班","FWorkshops":"SZ-P1 -新厂3楼","FProductionGroup":"D02","FMaterilNumber":"800-EEE893-A0-R","Total":1234,"Repair":2,"FName":"变形","FBadQtySum":"2.00"}
+    function FqcNg() {
+        $.ajax({
+            url: '../Zzj/FqcNg',
+            type: 'POST',
+            data: { id: "15" },
+            success: function (data) {
+                var json = JSON.parse(data);
+               
+                for (var i = 0; i < json.length; i++) {
+                    //解析json
+                    var trBegin = "<tr>";
+                    var td1 = "<td class='ms_text'><font class='ms_font'>" + json[i].CheckDate+ "</font></td>";
+                    var td2 = "<td class='ms_text'><font class='ms_font'>" + json[i].Fclass + "</font></td>";
+                    var td3 = "<td class='ms_text'><font class='ms_font'>" + json[i].FWorkshops + "</font></td>";
+                    var td4 = "<td class='ms_text'><font class='ms_font'>" + json[i].FProductionGroup + "</font></td>";
+                    var td5 = "<td class='ms_text'><font class='ms_font'>" + json[i].Total + "</font></td>";
+                    var td6 = "<td class='ms_text'><font class='ms_font'>" + json[i].Repair + "</font></td>";
+                    var td7 = "<td class='ms_text'><font class='ms_font'>" + json[i].FMaterilNumber + "</font></td>";
+                   
+
+                    var td8 = "<td class='ms_text'><font class='ms_font'>" + json[i].FName + "</font></td>";
+
+                    var trEnd = "</tr>";
+                    var room = trBegin + td1 + td2 + td3 + td4 + td5 + td6 + td7 + td8 + trEnd;
+                    $("#table1").append(room);
+
+
+
+                }
+            }
+        })
+
+
+
+
+
+
+    }
+
+
+
+        //直通率
+        //{"timePeriod":"09:30:00","fqcRate":"100.00"}
+    function FqcRate() {
+
+        var x = [];
+        var y = [];
+
+        $.ajax({
+           
+            
+            url: '../Zzj/FqcRate',
+            type: 'POST',
+            data: { id: "15" },
+            success: function (data) {
+              
+                var json = JSON.parse(data);
+                for (var i = 0; i < json.length; i++) {
+                    x[i] = json[i].timePeriod;
+                    y[i] = parseInt(json[i].fqcRate);
+
+                    console.log(json[i].fqcRate);
+                  
+
+
+                }
+
+
+
+
+                $('#container').highcharts({
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: '直通率趋势图',
+                        style: {
+                            color: '#3E576F',
+                            fontSize: '50px'
+                        }
+                    },
+                    subtitle: {
+                        text: ' 数据来源:新厂3.8 当前时间：',
+                        style: {
+                            color: '#3E576F',
+                            fontSize: '30px'
+                        }
+                    },
+                    xAxis: {
+                        categories: x,
+                        crosshair: true
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: '%',
+                            style: {
+                                color: '#3E576F',
+                                fontSize: '20px'
+                            }
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+                        footerFormat: '</table>',
+                        shared: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            pointPadding: 0.2,
+                            borderWidth: 0,
+                            dataLabels: {
+                                enabled: true, // dataLabels设为true
+                                style: {
+                                    color: '#000000',
+                                    fontSize: '15px',
+                                    fontFamily: '微软雅黑'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: '直通率',
+                        data: y,
+                        turboThreshold: 0,
+                        color: '#008000',
+                        negativeColor: 'blue'
+                    }]
+                });
+            },
+            error: function (data) {
+                location.reload();
+            }
+        });
+
+
+
+
+
+
+    }
+
+
+
+
+    </script>
+
+</body>
+</html>

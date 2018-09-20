@@ -18,6 +18,12 @@ namespace cmvcdemo.Controllers
     
      }
 
+        public ActionResult TestView()
+        {
+
+            return View();
+
+        }
         //返回视图
 
         public ActionResult MyView()
@@ -26,6 +32,7 @@ namespace cmvcdemo.Controllers
              return View();
 
         }
+
         //返回一个报表的json值
        public string GetUsers()
         {
@@ -38,6 +45,42 @@ namespace cmvcdemo.Controllers
         {
 
             return Dal.MyTest.LshapeShow();
+
+
+        }
+        //直通率看板界面
+
+        public ActionResult RirectRate()
+        {
+           
+
+            
+             return View();
+        }
+
+        
+
+        public string FqcNg(string id)
+        {
+
+
+
+
+
+
+            return Dal.MyTest.FqcNg();
+
+
+        }
+        
+
+        public string FqcRate(string id)
+        {
+
+
+
+
+         return Dal.MyTest.FqcRate();
 
 
         }
