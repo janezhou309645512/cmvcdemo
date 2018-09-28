@@ -1,0 +1,171 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>项目进度</title>
+    <meta http-equiv="refresh" content="180" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+    <style type="text/css">
+        .ms_text {
+           
+            text-align: center;
+            height: 50px;
+            border: 1px solid #00BFFF;
+        }
+
+        .ms_font {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .ms_unfont {
+            font-size: 20px;
+            color: #ff6666;
+        }
+    </style>
+</head>
+<body bgcolor="#FFFFFF">
+
+
+
+    <div style="padding-top: 10px;">
+
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+            <tr>
+                <td width="100%" align="center"><font size="6" color="#000000">项目进度</font></td>
+            </tr>
+        </table>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+            <tr>
+                <td class="ms_text" width="20%"><font class="ms_font">项目名</font></td>
+                <td class="ms_text" width="15%"><font class="ms_font">模切数</font></td>
+                <td class="ms_text" width="15%"><font class="ms_font">手工数</font></td>
+                <td class="ms_text" width="15%"><font class="ms_font">过检数</font></td>
+                <td class="ms_text" width="15%"><font class="ms_font">包装入库数</font></td>
+                <td class="ms_text" width="20%"><font class="ms_font">工单OK否</font></td>
+
+            </tr>
+        </table>
+    </div>
+    <div id="demo" style="overflow: hidden; height:960px;">
+        <div id="demo1">
+            <table id="table1" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9"></table>
+
+        </div>
+        <div id="demo2"></div>
+    </div>
+    <script type="text/javascript">
+
+                 //1.CSS简化 2.做判断
+            $(document).ready(function () {
+                //
+                QueryTables();
+
+                var speed = 50;
+                demo2.innerHTML = demo1.innerHTML;
+                function Marquee() {
+                    if (demo2.offsetTop - demo.scrollTop <= 0){
+                        demo.scrollTop -= demo1.offsetHeight;
+                    } else {
+                        demo.scrollTop++;
+                    }
+                }
+                var MyMar = setInterval(Marquee, speed);
+
+                demo.onmouseover = function () {
+                    clearInterval(MyMar);
+                }
+
+                demo.onmouseout = function () {
+                    MyMar = setInterval(Marquee, speed);
+                }
+                 }
+            );
+
+        //{"ItemName":"AEX","ModuleQtySum":"1550.00","GoodQty":"344.70","FQcQty":"289.50","FStorageQty":"0.00","state":0}
+                function QueryTables() {
+                $.ajax({
+                    url: '../Zzj/ProjectSch',
+                    type: 'POST',
+                    data: { id: "15"},
+                    success: function (data) {
+                        var json = JSON.parse(data);
+                        console.log(data);
+                        for (var i = 0; i < json.length; i++) {
+                            //解析json
+                            var trBegin = "<tr>";
+                            var td1 = "<td class='ms_text' width='20%'><font class='ms_font'>" + json[i].ItemName + "</font></td>";
+                            var td2 = "<td class='ms_text' width='15%'><font class='ms_font'>" + json[i].ModuleQtySum + "</font></td>";
+                            var td3 = "<td class='ms_text' width='15%'><font class='ms_font'>" + json[i].GoodQty + "</font></td>";
+                            var td4 = "<td class='ms_text' width='15%'><font class='ms_font'>" + json[i].FQcQty + "</font></td>";
+                            var td5 = "<td class='ms_text' width='15%'><font class='ms_font'>" + json[i].FStorageQty + "</font></td>";
+
+                            if (json[i].state == 1) {
+                                var td6 = "<td class='ms_text' width='20%'><font class='ms_unfont'>是</font></td>";
+
+
+                            } else {
+                                var td6 = "<td class='ms_text' width='20%'><font class='ms_font'>否</font></td>";
+
+                            }
+
+
+
+
+                            var trEnd = "</tr>";
+                            var room = trBegin + td1 + td2 + td3 + td4 + td5 + td6 + trEnd;
+                            $("#table1").append(room);
+
+
+
+                        }
+                    }
+                })
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

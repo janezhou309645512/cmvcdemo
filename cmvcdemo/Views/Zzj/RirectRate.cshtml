@@ -16,7 +16,7 @@
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Content/Highcharts-6.0.7/code/highcharts.js"></script>
-    <script type="text/javascript" src="Highcharts-6.0.7/code/highcharts.js"></script>
+    
     <script src="~/Content/Highcharts-6.0.7/code/modules/exporting.src.js"></script>
 
     <script src="~/Content/highcharts-zh_CN.js"></script>
@@ -29,6 +29,29 @@
 		self.resizeTo(window.screen.Width + 30, window.screen.Height + 143)
 	}
     </script>
+    <style type="text/css">
+        .ms_text {
+            text-align: center;
+            height: 50px;
+            border: 1px solid #00BFFF;
+        }
+
+        .ms_font {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .ms_unfont {
+            font-size: 20px;
+            color: #ff6666;
+        }
+    </style>
+
+
+
+
+
+
 
 
 
@@ -47,14 +70,14 @@
             </table>
             <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
                 <tr>
-                    <td class="ms_text"><font class="ms_font">日期</font></td>
-                    <td class="ms_text"><font class="ms_font">班别</font></td>
-                    <td class="ms_text"><font class="ms_font">楼层</font></td>
-                    <td class="ms_text"><font class="ms_font">组别</font></td>
-                    <td class="ms_text"><font class="ms_font">送检总批数</font></td>
-                    <td class="ms_text"><font class="ms_font">返工批数</font></td>
-                    <td class="ms_text"><font class="ms_font">品名</font></td>
-                    <td class="ms_text"><font class="ms_font">返工原因</font></td>
+                    <td class="ms_text" width="10%"><font class="ms_font">日期</font></td>
+                    <td class="ms_text" width="10%"><font class="ms_font">班别</font></td>
+                    <td class="ms_text" width="10%"><font class="ms_font">楼层</font></td>
+                    <td class="ms_text" width="10%"><font class="ms_font">组别</font></td>
+                    <td class="ms_text" width="10%"><font class="ms_font">送检总批数</font></td>
+                    <td class="ms_text" width="10%"><font class="ms_font">返工批数</font></td>
+                    <td class="ms_text" width="20%"><font class="ms_font">品名</font></td>
+                    <td class="ms_text" width="20%"><font class="ms_font">返工原因</font></td>
                 </tr>
             </table>
         </div>
@@ -125,16 +148,16 @@
                 for (var i = 0; i < json.length; i++) {
                     //解析json
                     var trBegin = "<tr>";
-                    var td1 = "<td class='ms_text'><font class='ms_font'>" + json[i].CheckDate+ "</font></td>";
-                    var td2 = "<td class='ms_text'><font class='ms_font'>" + json[i].Fclass + "</font></td>";
-                    var td3 = "<td class='ms_text'><font class='ms_font'>" + json[i].FWorkshops + "</font></td>";
-                    var td4 = "<td class='ms_text'><font class='ms_font'>" + json[i].FProductionGroup + "</font></td>";
-                    var td5 = "<td class='ms_text'><font class='ms_font'>" + json[i].Total + "</font></td>";
-                    var td6 = "<td class='ms_text'><font class='ms_font'>" + json[i].Repair + "</font></td>";
-                    var td7 = "<td class='ms_text'><font class='ms_font'>" + json[i].FMaterilNumber + "</font></td>";
+                    var td1 = "<td class='ms_text  width='10%'><font class='ms_font'>" + json[i].CheckDate+ "</font></td>";
+                    var td2 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].Fclass + "</font></td>";
+                    var td3 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].FWorkshops + "</font></td>";
+                    var td4 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].FProductionGroup + "</font></td>";
+                    var td5 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].Total + "</font></td>";
+                    var td6 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].Repair + "</font></td>";
+                    var td7 = "<td class='ms_text' width='20%'><font class='ms_font'>" + json[i].FMaterilNumber + "</font></td>";
                    
 
-                    var td8 = "<td class='ms_text'><font class='ms_font'>" + json[i].FName + "</font></td>";
+                    var td8 = "<td class='ms_text'width='20%'><font class='ms_font'>" + json[i].FName + "</font></td>";
 
                     var trEnd = "</tr>";
                     var room = trBegin + td1 + td2 + td3 + td4 + td5 + td6 + td7 + td8 + trEnd;
@@ -177,9 +200,7 @@
 
                     console.log(json[i].fqcRate);
                   
-
-
-                }
+                    }
 
 
 
@@ -196,7 +217,7 @@
                         }
                     },
                     subtitle: {
-                        text: ' 数据来源:新厂3.8 当前时间：',
+                        text: ' 数据来源:新厂3.8 当前时间：'+getNowDate(),
                         style: {
                             color: '#3E576F',
                             fontSize: '30px'
@@ -216,7 +237,7 @@
                             }
                         }
                     },
-                    tooltip: {
+                    tooltip: {//鼠标移到图形上时显示的提示框  
                         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                         pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
                         '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
@@ -224,7 +245,7 @@
                         shared: true,
                         useHTML: true
                     },
-                    plotOptions: {
+                    plotOptions: {//绘图线条控制  
                         column: {
                             pointPadding: 0.2,
                             borderWidth: 0,
@@ -258,7 +279,23 @@
 
 
     }
+    function getNowDate() {
+        //获取当前时间
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        if (month < 10) {
+            month = "0" + month;
+        }
+        if (day < 10) {
+            day = "0" + day;
+        }
+        var nowDate = year + "-" + month + "-" + day;
+        return nowDate;
 
+
+      }
 
 
 

@@ -1,0 +1,256 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>项目进度</title>
+    <meta http-equiv="refresh" content="180" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    
+    <style type="text/css">
+        .ms_text {
+          
+            text-align: center;
+            height: 50px;
+            border: 1px solid #00BFFF;
+        }
+
+        .ms_font {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .ms_unfont {
+            font-size: 20px;
+            color: #ff6666;
+        }
+    </style>
+</head>
+<body bgcolor="#FFFFFF">
+
+
+
+    <div style="padding-top: 10px;">
+
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+            <tr>
+                <td width="100%" align="center"><font size="6" color="#000000">模切达成进度</font></td>
+            </tr>
+        </table>
+        
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+            <tr>
+                <td class="ms_text" width="10%"><font class="ms_font">生产日期</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">班次</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">工号</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">姓名</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">机台编号</font></td>
+                <td class="ms_text" width="15%"><font class="ms_font">工单号</font></td>
+                <td class="ms_text" width="15%"><font class="ms_font">产品名称</font></td>
+                <td class="ms_text" width="20%"><font class="ms_font">达成进度</font></td>
+                
+               
+            </tr>
+        </table>
+    </div>
+    <div id="demo" style="overflow: hidden; height:960px;">
+        <div id="demo1">
+            <table id="table1" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
+              
+            </table>
+
+        </div>
+        <div id="demo2"></div>
+    </div>
+    <script type="text/javascript">
+
+                 //1.CSS简化 2.做判断
+        $(document).ready(function () {
+            /*
+              //console.log( parseInt(json[i].mqSechdule));
+                           if (json[i].mqSechdule == null) {
+
+                               $("#ms_progress").css({ "background-color": "#ee0000", "width": "0%" });
+
+                               $("#ms_progress").val(json[i].mqSechdule + "%");
+                               
+
+
+
+                           } else if (parseInt(json[i].mqSechdule) >= 100) {
+
+                               $("#ms_progress").css({ "background-color": "#228B22", "width": "100%" });
+
+                               $("#ms_progress").val(json[i].mqSechdule + "%");
+
+                              
+                           }
+
+
+
+                           else {
+                               console.log(json[i].mqSechdule);
+                               $("#ms_progress").css({ "background-color": "#ee0000", "width": (parseInt(json[i].mqSechdule) + "%") });
+
+                               $("#ms_progress").val(json[i].mqSechdule + "%");
+                           }
+
+
+            */
+                //
+                QueryTables();
+
+                var speed = 50;
+                demo2.innerHTML = demo1.innerHTML;
+                function Marquee() {
+                    if (demo2.offsetTop - demo.scrollTop <= 0){
+                        demo.scrollTop -= demo1.offsetHeight;
+                    } else {
+                        demo.scrollTop++;
+                    }
+                }
+                var MyMar = setInterval(Marquee, speed);
+
+                demo.onmouseover = function () {
+                    clearInterval(MyMar);
+                }
+
+                demo.onmouseout = function () {
+                    MyMar = setInterval(Marquee, speed);
+                }
+                 }
+            );
+
+        //{"EntDate":"2018-09-20 00:00:00","FManuOrder":"ZAM180920008","FProduct":"800-MSD723-A0-R","Fteam":"白班","FOperator":"SZ-12258","UFname":"于碧茹","Fmachine":"","mqSechdule":null}
+                function QueryTables() {
+                $.ajax({
+                    url: '../Zzj/ModuleSch',
+                    type: 'POST',
+                    data: { id: "15"},
+                    success: function (data) {
+                        var json = JSON.parse(data);
+                        
+                        //console.log(json);
+                        for (var i = 0; i < json.length; i++) {
+                            //解析json
+                            var trBegin = "<tr>";
+                            var td1 = "<td class='ms_text' width='10%'><font class='ms_font'>" +getNowDate()+ "</font></td>";
+                            var td2 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].Fteam + "</font></td>";
+                            var td3 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].FOperator + "</font></td>";
+                            var td4 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].UFname + "</font></td>";
+                            var td5 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].Fmachine + "</font></td>";
+                            var td6 = "<td class='ms_text' width='15%'><font class='ms_font'>" + json[i].FManuOrder + "</font></td>";
+                            var td7 = "<td class='ms_text' width='15%'><font class='ms_font'>" + json[i].FProduct + "</font></td>";
+                        
+                            var td8 = "<td class='ms_text' width='20%'><div id='ms_progress'></div></td>";
+
+                            //console.log( parseInt(json[i].mqSechdule));
+                           if (json[i].mqSechdule == null) {
+
+                               var td8 = "<td class='ms_text' width='20%'><div style='background-color:#ee0000;width:0%'>0%</div></td>";
+                               
+
+
+
+                           } else if (parseInt(json[i].mqSechdule) >= 100) {
+                               var td8 = "<td class='ms_text' width='20%'><div style='background-color:#228B22;width:100%'>" + json[i].mqSechdule + "%</div></td>";
+
+                              
+
+                              
+                           }
+
+
+
+                           else {
+
+                               var td8 = "<td class='ms_text' width='20%'><div style='background-color:#ee0000;width:"+parseInt(json[i].mqSechdule)+"%'>" + json[i].mqSechdule + "%</div></td>";
+                             
+
+
+                           }
+
+
+                           
+                           
+
+                            var trEnd = "</tr>";
+                            var room = trBegin + td1 + td2 + td3 + td4 + td5 + td6 + td7 + td8 + trEnd;
+
+                          
+
+                            
+                            $("#table1").append(room);
+                        }
+
+
+
+                    }
+                })
+
+            }
+
+                function getNowDate() {
+                    //获取当前时间
+                    var date = new Date();
+                    var year = date.getFullYear();
+                    var month = date.getMonth() + 1;
+                    var day = date.getDate();
+                    if (month < 10) {
+                        month = "0" + month;
+                    }
+                    if (day < 10) {
+                        day = "0" + day;
+                    }
+                    var nowDate = year + "-" + month + "-" + day;
+                    return nowDate;
+
+
+                };
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+</body>
+</html>

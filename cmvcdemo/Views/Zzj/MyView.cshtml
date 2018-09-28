@@ -15,7 +15,7 @@
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <style type="text/css">
         .ms_text {
-            width: 50px;
+            
             text-align: center;
             height: 50px;
             border: 1px solid #00BFFF;
@@ -37,8 +37,7 @@
 </head>
 <body bgcolor="#FFFFFF">
 
-
-
+    
     <div style="padding-top: 10px;">
 
         <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
@@ -48,14 +47,14 @@
         </table>
         <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9">
             <tr>
-                <td class="ms_text"><font class="ms_font">序号</font></td>
-                <td class="ms_text"><font class="ms_font">工单</font></td>
-                <td class="ms_text"><font class="ms_font">品名</font></td>
-                <td class="ms_text"><font class="ms_font">材料编号</font></td>
-                <td class="ms_text"><font class="ms_font">材料批次</font></td>
-                <td class="ms_text"><font class="ms_font">材料规格</font></td>
-                <td class="ms_text"><font class="ms_font">是否强制</font></td>
-                <td class="ms_text"><font class="ms_font">扫描时间</font></td>
+                <td class="ms_text" width="5%"><font class="ms_font">序号</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">工单</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">品名</font></td>
+                <td class="ms_text" width="12%"><font class="ms_font">材料编号</font></td>
+                <td class="ms_text" width="16%"><font class="ms_font">材料批次</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">材料规格</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">是否强制</font></td>
+                <td class="ms_text" width="10%"><font class="ms_font">扫描时间</font></td>
             </tr>
         </table>
     </div>
@@ -64,12 +63,14 @@
             <table id="table1" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="4FBFF9"></table>
 
         </div>
-        <div id="demo2"></div>  
+        <div id="demo2"></div>
+
     </div>
     <script type="text/javascript">
 
                  //1.CSS简化 2.做判断
-            $(document).ready(function () {
+        $(document).ready(function () {
+            
                 //
                 QueryTables();
 
@@ -106,23 +107,23 @@
                         for (var i = 0; i < json.length; i++) {
                             //解析json
                             var trBegin = "<tr>";
-                            var td1 = "<td class='ms_text'><font class='ms_font'>" + (i + 1) + "</font></td>";
-                            var td2 = "<td class='ms_text'><font class='ms_font'>" + json[i].FManuOrder + "</font></td>";
-                            var td3 = "<td class='ms_text'><font class='ms_font'>" + json[i].FProduct + "</font></td>";
-                            var td4 = "<td class='ms_text'><font class='ms_font'>" + json[i].FMaterial + "</font></td>";
-                            var td5 = "<td class='ms_text'><font class='ms_font'>" + json[i].FLotNumber + "</font></td>";
-                            var td6 = "<td class='ms_text'><font class='ms_font'>" + json[i].FSpecs + "</font></td>";
+                            var td1 = "<td class='ms_text' width='5%'><font class='ms_font'>" + (i + 1) + "</font></td>";
+                            var td2 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].FManuOrder + "</font></td>";
+                            var td3 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].FProduct + "</font></td>";
+                            var td4 = "<td class='ms_text' width='12%'><font class='ms_font'>" + json[i].FMaterial + "</font></td>";
+                            var td5 = "<td class='ms_text' width='16%'><font class='ms_font'>" + json[i].FLotNumber + "</font></td>";
+                            var td6 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].FSpecs + "</font></td>";
 
                             if (json[i].FIsForce == true) {
-                                var td7 = "<td class='ms_text'><font class='ms_unfont'>是</font></td>";
+                                var td7 = "<td class='ms_text width='10%'><font class='ms_unfont'>是</font></td>";
 
 
                             } else {
-                                var td7 = "<td class='ms_text'><font class='ms_font'>否</font></td>";
+                                var td7 = "<td class='ms_text' width='10%'><font class='ms_font'>否</font></td>";
 
                             }
 
-                            var td8 = "<td class='ms_text'><font class='ms_font'>" + json[i].FCheckTime + "</font></td>";
+                            var td8 = "<td class='ms_text' width='10%'><font class='ms_font'>" + json[i].FCheckTime + "</font></td>";
 
                             var trEnd = "</tr>";
                             var room = trBegin + td1 + td2 + td3 + td4 + td5 + td6 + td7 + td8 + trEnd;

@@ -9,18 +9,36 @@ namespace cmvcdemo.Controllers
 {
     public class ZzjController : Controller
     {
-
-     //直接返回字符串
+         string date = DateTime.Now.ToString("yyyy-MM-dd");
+        //直接返回字符串
         public string GetString()
 
     {
-            return "这是我的一SDFSFSDFS ;)"; 
+            return "testone welcome you"; 
     
      }
 
-        public ActionResult TestView()
+        public ActionResult AllView()
         {
 
+            return View();
+
+        }
+
+
+        public ActionResult MainView(string id)
+        {
+
+            //根据id在数据库查询地址url
+            //传参数给ui
+           ViewBag.Url = Dal.MyTest.KanBanUrl(Convert.ToInt32(id));
+           return View();
+
+        }
+
+        public ActionResult TestView()
+        {
+            ViewBag.Mal ="dfsfsdfsdfsdf";
             return View();
 
         }
@@ -28,8 +46,8 @@ namespace cmvcdemo.Controllers
 
         public ActionResult MyView()
       {
-            
-             return View();
+           
+            return View();
 
         }
 
@@ -44,7 +62,8 @@ namespace cmvcdemo.Controllers
         public string LshapeShow(string id)
         {
 
-            return Dal.MyTest.LshapeShow();
+           
+            return Dal.MyTest.LshapeShow(date);
 
 
         }
@@ -68,7 +87,7 @@ namespace cmvcdemo.Controllers
 
 
 
-            return Dal.MyTest.FqcNg();
+            return Dal.MyTest.FqcNg(date);
 
 
         }
@@ -80,13 +99,49 @@ namespace cmvcdemo.Controllers
 
 
 
-         return Dal.MyTest.FqcRate();
+         return Dal.MyTest.FqcRate(date);
 
 
         }
+        //项目进度
+
+        public ActionResult ProjectSchedule()
+        {
 
 
 
+            return View();
+        }
+
+
+        public string ProjectSch(string id)
+        {
+
+
+
+
+            return Dal.MyTest.ProjectSch(date);
+        }
+
+
+        //模切达成
+        public ActionResult ModuleSchedule()
+        {
+
+
+
+
+            return View();
+        }
+
+        public string ModuleSch(string id)
+        {
+
+
+
+
+            return Dal.MyTest.ModuleSch(date);
+        }
 
 
 

@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1">
+    <meta name="full-screen" content="yes" />
+    <meta name="browsermode" content="application" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="主界面" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+    <title>
+
+    </title>
+    <script language="javascript" type="text/javascript">
+        // 执行代码
+        var maxs = 120;//设定最长时间为120刷新一次
+        var curr = 0;//设定当前运行的时间
+        var url = "../Zzj/" + "@ViewBag.Url";
+        $(function () {
+           
+
+            $("#framdid").height((document.documentElement.clientHeight - 5));
+            $("#framdid").width(document.documentElement.clientWidth);
+            $('#framdid').attr('src', url);
+            self.setInterval("checkcode()", 60000);//设定每秒检测一次
+
+            });
+
+            function checkcode()
+            {
+                //判断id是哪个,就访问哪一个网址
+
+                    $('#framdid').attr('src', '../Zzj/MyView');
+
+                }
+
+
+
+
+    </script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body style="overflow:hidden">
+   
+        
+            <iframe id="framdid"></iframe>
+    
+</body>
+</html>
