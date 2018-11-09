@@ -44,6 +44,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastReport">
+      <HintPath>E:\ziliao\FastReport.Net V2014.4.8 For .Net4.0\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>E:\ziliao\FastReport.Net V2014.4.8 For .Net4.0\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor">
+      <HintPath>E:\ziliao\FastReport.Net V2014.4.8 For .Net4.0\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Web">
+      <HintPath>E:\ziliao\FastReport.Net V2014.4.8 For .Net4.0\FastReport.Web.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -195,6 +207,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\logis\Controllers\FrController.cs" />
     <Compile Include="Areas\logis\logisAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -227,6 +240,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Areas\logis\Views\web.config" />
+    <Content Include="Areas\logis\Views\Fr\Fr.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -276,10 +290,13 @@
     <Content Include="Views\Zzj\MyView.cshtml" />
     <Content Include="Views\Zzj\TestView.cshtml" />
     <Content Include="Views\Zzj\RirectRate.cshtml" />
+    <Content Include="Views\Zzj\AllView.cshtml" />
+    <Content Include="Views\Zzj\MainView.cshtml" />
+    <Content Include="Views\Zzj\ModuleSchedule.cshtml" />
+    <Content Include="Views\Zzj\ProjectSchedule.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\logis\Controllers\" />
     <Folder Include="Areas\logis\Models\" />
     <Folder Include="Areas\logis\Views\Shared\" />
     <Folder Include="Content\Highcharts-6.0.7\" />

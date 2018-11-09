@@ -1,0 +1,50 @@
+﻿@using FastReport.Web
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Fr</title>
+    @WebReportGlobals.Scripts()
+    @WebReportGlobals.Styles()
+
+    <style type="text/css">
+        html > /**/ body .container {
+            margin: 0;
+            max-width: 100%;
+        }
+
+        #report-wrapper .frtoolbar {
+            width: 100%;
+        }
+
+        #report-wrapper #frbody {
+            text-align: center;
+        }
+
+            #report-wrapper #frbody > div {
+                margin: 0 auto;
+            }
+
+        html > /**/ body #report-wrapper span > div > div {
+            display: block;
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    <div id="report-wrapper">
+        @ViewBag.WebReport.GetHtml()
+    </div>
+</body>
+</html>
