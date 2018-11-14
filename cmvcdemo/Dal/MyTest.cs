@@ -12,6 +12,7 @@ namespace cmvcdemo.Dal
         static HK.Pub.Dal.Sql dbMachineDataCollection = new HK.Pub.Dal.Sql(HK.ConfigFile.ConnectiongString_Get("ShiMo"));
 
         static HK.Pub.Dal.Sql dbkanBanDataCollection = new HK.Pub.Dal.Sql(HK.ConfigFile.ConnectiongString_Get("KanBan"));
+
         public static string LshapeShow(string nowDate)
         {
 
