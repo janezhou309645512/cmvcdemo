@@ -210,6 +210,7 @@
     <Compile Include="Areas\App\AppAreaRegistration.cs" />
     <Compile Include="Areas\logis\Controllers\FrController.cs" />
     <Compile Include="Areas\logis\logisAreaRegistration.cs" />
+    <Compile Include="Areas\WebSelf\WebSelfAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -243,6 +244,7 @@
     <Content Include="Areas\logis\Views\web.config" />
     <Content Include="Areas\logis\Views\Fr\Fr.cshtml" />
     <Content Include="Areas\App\Views\web.config" />
+    <Content Include="Areas\WebSelf\Views\web.config" />
     <None Include="Properties\PublishProfiles\120.pubxml" />
     <None Include="Properties\PublishProfiles\futai.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -306,6 +308,9 @@
     <Folder Include="Areas\App\Views\Shared\" />
     <Folder Include="Areas\logis\Models\" />
     <Folder Include="Areas\logis\Views\Shared\" />
+    <Folder Include="Areas\WebSelf\Controllers\" />
+    <Folder Include="Areas\WebSelf\Models\" />
+    <Folder Include="Areas\WebSelf\Views\Shared\" />
     <Folder Include="Content\Highcharts-6.0.7\" />
   </ItemGroup>
   <ItemGroup>
