@@ -241,6 +241,7 @@
     </Content>
     <Content Include="Areas\logis\Views\web.config" />
     <Content Include="Areas\logis\Views\Fr\Fr.cshtml" />
+    <None Include="Properties\PublishProfiles\futai.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
