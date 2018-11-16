@@ -75,7 +75,13 @@ namespace cmvcdemo.Dal
 
             return url;
         }
+        public static string KanBan(int id)
+        {
 
+
+
+            return dbkanBanDataCollection.QueryDataTable(@"select * from [dbo].[T_PageSwitching] P inner join  [dbo].[T_KanBan] K on P.FId=K.FId where P.FId=@p1", new { p1 = id }).ToJson(); ;
+        }
 
 
 

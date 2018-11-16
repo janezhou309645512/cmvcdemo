@@ -300,6 +300,7 @@
     <Content Include="Views\Zzj\MainView.cshtml" />
     <Content Include="Views\Zzj\ModuleSchedule.cshtml" />
     <Content Include="Views\Zzj\ProjectSchedule.cshtml" />
+    <Content Include="Views\Zzj\SwitchingView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

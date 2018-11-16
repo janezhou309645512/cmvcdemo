@@ -35,6 +35,23 @@ namespace cmvcdemo.Controllers
            return View();
 
         }
+        public ActionResult SwitchingView(string id)
+        {
+
+            //根据id在数据库查询地址url
+            //传参数给ui
+            ViewBag.Url = id;
+            return View();
+
+        }
+        public string PageSwitching(string id)
+        {
+
+
+            return Dal.MyTest.KanBan(Convert.ToInt32(id));
+
+
+        }
 
         public ActionResult TestView()
         {
