@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{height:100%;}
+body{
+	background: url(../img/lADPBbCc1VP_Mv3NAwDNBVY_1366_768.jpg) no-repeat;
+    background-size:100% 100%;
+    background-color:#cfcccc;
+	/*background-position: center;
+	background-attachment: fixed;repeat-x #FFFFFF;
+	background-size:100% 100% ;*/
+    position:relative;
+}
+#top img{
+	position: relative;
+	top: 17px;
+	left: 32px;
+	
+}
+#top span{
+	position: relative;
+	top:2px ;
+	left: 50px;
+	font-size: 24px;
+    color: #ffffff;
+	/*color: #d7d7d7;*/
+}
+#box1{
+	position: absolute;
+	margin: 0 auto;
+	width: 746px;
+	height: 451px;
+	background-image: url(../img/beijingkuang.png);
+	top:50% ;
+    left:50%;
+            transform:translate(-50%,-50%);
+         -o-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+	/*border: 1px solid;*/
+}
+#LoginLeft{
+	text-align: center;
+	width:240px ;
+	height: 267px;
+	/*border: 1px solid;*/
+	position: absolute;
+	margin: 67px;
+	top: 35px;
+    /*color: #ffffff;*/
+	color: #d7d7d7;
+}
+#LoginRight{
+	width:312px ;
+	height: 441px;
+	/*border: 1px solid;*/
+	position: absolute;
+	margin-left:390px ;
+}
+p{
+	font-size: 16px;
+}
+.img{
+	margin-top:-35px ;
+	margin-left:100px;
+}
+.p1{
+	margin-top:5px ;
+}
+.p2{
+	margin-top:25px ;
+}
+.p2 p{
+	margin-top:5px ;
+}
+#LoginLeft .h2{
+	margin-top: 50px;
+}
+#btn_login {
+    width: 312px;
+    height: 45px;
+    background-color: #ff7b00;
+    border-radius: 10px;
+    box-shadow: 0px 4px 7px 0px rgba(255, 123, 0, 0.6);
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+#LoginRight1{
+	/*border: 1px solid;*/
+	margin-top:50px ;
+}
+#LoginRight1 img{
+	margin-left: 10px;
+}
+#LoginRight span{
+	margin-top:40px ;
+}
+#LoginRight1 input,#select{
+	width: 260px;
+	height: 50px;
+	margin-left:5px ;
+	border: 0px;
+    outline:none;
+}
+#select{
+    appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url("../img/xiala.png") no-repeat scroll right center transparent;
+}
+#select:hover{
+  background: url("../img/shangla.png") no-repeat scroll right center transparent;
+}
+#LoginRight2 input{
+	margin-left:13px ;
+	margin-top:30px ;
+}
+#LoginRight2 .a1{
+	margin-left:70px ;
+	color: #222222;
+}
+#LoginRight2 .a2{
+	margin-left:15px ;
+	color: #222222;
+}
+.img2{
+	position: absolute;
+	top: 245px;
+	right: 10px;
+}

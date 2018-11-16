@@ -1,0 +1,112 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>登录</title>
+
+    <link href="~/Content/css/Login.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="top">
+        <img src="~/Content/img/lylog.png" />
+        <span>
+            领益智造
+        </span>
+    </div>
+    <div class="box1" id="box1">
+        <!--左边-->
+        <div id="LoginLeft" class="left">
+            <h2 class="h1">我的使命</h2>
+            <p class="p1">齐家平天下</p>
+            <h2 class="h2">EHS方针政策</h2>
+            <div class="p2">
+                <p>以人为本，保障员工健康安全；</p>
+                <p>保护环境，共建绿色生态家园；</p>
+                <p>遵守法规，履行企业社会责任；</p>
+                <p>持续改进，构建和谐经营环境。</p>
+            </div>
+
+        </div>
+
+
+        <!--右边-->
+        <div id="LoginRight" class="rigth">
+            <div class="img">
+                <img src="~/Content/img/lALPBbCc1VQDpJ9mZg_102_102.png" class="img1" />
+            </div>
+
+            <div id="LoginRight1">
+
+                @*<img src="img/jiaose.png" class="img1" />
+                    <select id="select" onkeydown="Select.del(this,event)" onkeypress="Select.write(this,event)">
+                        <option value="aaa">供应商</option>
+                        <option value="bbb">员工</option>
+                    </select>
+                    <hr />*@
+
+                <img src="~/Content/img/zhanghao.png" class="img1" />
+                <input type="text" name="" id="uname" value="" placeholder="账号" />
+                <hr />
+
+
+                <img src="~/Content/img/yonghumima.png" class="img1" />
+                <input type="password" name="" id="upass" value="" placeholder="用户密码" />
+                @*<img src="~/Content/img/guanbi.png" class="img2" />*@
+                <hr />
+            </div>
+            <div id="LoginRight2">
+                <input type="checkbox" name="" id="ckpwd" value="" />
+                <span>记住密码</span>
+                <a class="a1">新用户</a>
+                <a class="a2">找回密码</a>
+            </div>
+
+            <div id="button1">
+                <input type="button" name="" id="btn_login" value="登录" />
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script>
+    $(function () {
+        $('#uname').val(cookie.get('account-id'));
+        $('#upass').val(cookie.get('account-pwd'));
+        $('#ckpwd').prop('checked', true)
+    });
+    $('#btn_login').on('click', function () {
+
+
+
+
+        $.post('../Login/Login', { UserName: $('#uname').val(), Pwd: $('#upass').val() }, function (r) {
+            console.log(r);
+            if (!r) { alert('登录失败！'); return;}
+            if (!r.Ok) { alert(r.errmsg); return; }
+            alert("登录成功！");
+            cookie.set('account-id', encodeURI($('#uname').val()));
+            cookie.set('account-pwd', encodeURI($('#upass').val()));
+            var return_url = cookie.get('return_url');
+            cookie.del('return_url');
+            if (return_url) location.href = return_url;
+            else location.href = '../Home/Index';
+        },'json');
+    });
+    $('body').keydown(function (e) {
+        console.log(e);
+        if (e.keyCode == 13) {
+            $('#btn_login').click();
+        }
+    })
+    </script>
+
+</body>
+</html>
